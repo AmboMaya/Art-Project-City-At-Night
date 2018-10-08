@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = 300;
 
 
-//borrowed drawStar function from http://jsfiddle.net/m1erickson/8j6kdf4o/
+//borrowed drawStar function from http://jsfiddle.net/m1erickson/8j6kdf4o/ and added gradient and stroke features to the function
 function drawStar(cx,cy,spikes,outerRadius,innerRadius, strokeWidth){
     var rot=Math.PI/2*3;
     var x=cx;
