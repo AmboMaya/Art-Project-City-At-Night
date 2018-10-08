@@ -4,6 +4,7 @@ var ctx=canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = 300;
 
+
 //borrowed drawStar function from http://jsfiddle.net/m1erickson/8j6kdf4o/
 function drawStar(cx,cy,spikes,outerRadius,innerRadius, strokeWidth){
     var rot=Math.PI/2*3;
@@ -39,6 +40,7 @@ function drawStar(cx,cy,spikes,outerRadius,innerRadius, strokeWidth){
     ctx.fill();
 }
 
+//Create 90 stars with a delay of 5 seconds. Randomise the early stars to appear after 5 seconds and later stars stops appearing after 17 seconds.
 function multiplyStars () {
     for (var i = 0; i < 90; i++) {
         var delay = Math.random() * 12000 + 5000;
@@ -47,6 +49,7 @@ function multiplyStars () {
     
 }
 
+//create a single star and place it in any random location within the canvas height 300px
 function createStar() {
     var x = Math.random() * window.innerWidth;
     var y = Math.random() * window.innerHeight;
@@ -57,6 +60,7 @@ function createStar() {
 }
 multiplyStars();
 
+//play sound with toggle play and pause feature
 var button = document.getElementById('sound');
 function togglePlay() {
     return sound.paused ? sound.play() : sound.pause();
