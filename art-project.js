@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", cityScape);
 
-const  cityScape = () => { 
+let cityScape = () => { 
     var canvas = document.getElementById('stars');
     var ctx=canvas.getContext("2d");
     canvas.width = window.innerWidth;
